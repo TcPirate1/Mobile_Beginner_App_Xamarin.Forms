@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IT6035_Project.Supervisor.StoreList"
+             Title="Stores List"
+             BackgroundColor="Violet">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="This is the list of stores:" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" Margin="30"/>
+            <ListView x:Name="storeList" BackgroundColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

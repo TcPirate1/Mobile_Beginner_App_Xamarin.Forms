@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IT6035_Project.Merchandiser.TodayTickets"
+             Title="Today's Tickets"
+             BackgroundColor="Violet">
+    <ContentPage.Content>
+        <StackLayout Margin="30">
+            <Label Text="These are the tickets for today:" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" TextColor="Black" Margin="20"/>
+            <ListView x:Name="todayTickets" BackgroundColor="White"/>
+
+            <Entry Keyboard="Text" Placeholder="Id" x:Name="TicketID" IsReadOnly="True" Margin="10,0,10,0"/>
+            <Entry Keyboard="Text" Placeholder="Name" x:Name="TicketName" IsReadOnly="True" Margin="10,0,10,0"/>
+            <Entry Keyboard="Text" Placeholder="Address" x:Name="TicketAddress" IsReadOnly="True" Margin="10,0,10,0"/>
+            <Entry Keyboard="Text" Placeholder="Comment" x:Name="TicketComment" TextColor="Black" Margin="10,0,10,0"/>
+            <StackLayout Orientation="Horizontal">
+            <Label Text="Complete" FontSize="20" FontAttributes="Bold" TextColor="Black" Margin="15,0,0,0"/>
+            <CheckBox x:Name="Complete" CheckedChanged="Checked"/>
+            </StackLayout>
+            <Button Text="Start timer" Clicked="TimeTicket" Margin="5"/>
+            <Button Text="Add the comment to the ticket" Clicked="CommentTicket" Margin="5"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

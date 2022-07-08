@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IT6035_Project.Supervisor.UpdateStorePage"
+             Title="Update the Store info here"
+             BackgroundColor="Violet">
+    <ContentPage.Content>
+        <StackLayout Margin="30">
+            <Label Text="Select the store to update from the list below" HorizontalOptions="Center" TextColor="Black" FontSize="18" FontAttributes="Bold" Margin="10"/>
+            <ListView x:Name="StoreList"/>
+
+            <Entry Keyboard="Text" Placeholder="Id" x:Name="StoreID" IsReadOnly="True" BackgroundColor="White"/>
+            <Entry Keyboard="Text" Placeholder="Store Name" x:Name="StoreName" BackgroundColor="White"/>
+            <Entry Keyboard="Text" Placeholder="Store Address" x:Name="StoreAddress" BackgroundColor="White"/>
+            <Button Text="Update Store" Clicked="UpdateStore" Margin="5"/>
+            <Button Text="Delete Store" Clicked="DeleteStore" Margin="5" TextColor="Red"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

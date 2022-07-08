@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IT6035_Project.Supervisor.UpdateMerchandiserPage"
+             Title="Update the merchandiser info here"
+             BackgroundColor="Violet">
+    <ContentPage.Content>
+        <StackLayout Margin="30">
+            <Label Text="Select the merchandiser to update from the list below" HorizontalOptions="Center" TextColor="Black" FontSize="18" FontAttributes="Bold" Margin="10"/>
+            <ListView x:Name="MerchandiserList"/>
+
+            <Entry Keyboard="Text" Placeholder="Id" x:Name="MerchantID" IsReadOnly="True" BackgroundColor="white"/>
+            <Entry Keyboard="Text" Placeholder="Merchandiser First Name" x:Name="MerchantFirst" BackgroundColor="white"/>
+            <Entry Keyboard="Text" Placeholder="Merchandiser Last Name" x:Name="MerchantLast" BackgroundColor="white"/>
+            <Entry Keyboard="Text" Placeholder="Merchandiser Contact" x:Name="MerchantContact" BackgroundColor="white"/>
+            <Button Text="Update Merchandiser" Clicked="UpdateMerchandiser" Margin="5"/>
+            <Button Text="Delete Merchandiser" Clicked="DeleteMerchandiser" Margin="5" TextColor="Red"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

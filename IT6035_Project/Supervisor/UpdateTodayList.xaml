@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IT6035_Project.Supervisor.UpdateTodayList"
+             Title="Update Today's List"
+             BackgroundColor="Violet">
+    <ContentPage.Content>
+        <StackLayout Margin="30">
+            <Label Text="Delete store from Today's List" HorizontalOptions="Center" TextColor="Black" FontSize="18" FontAttributes="Bold" Margin="10"/>
+            <ListView x:Name="UpdateDelete"/>
+
+            <Entry Keyboard="Text" Placeholder="id" x:Name="Sid" IsVisible ="false"/>
+            <Entry Keyboard="Text" Placeholder="Store Name" x:Name="SName" BackgroundColor="White"/>
+            <Entry Keyboard="Text" Placeholder="Store Address" x:Name="SAddress" BackgroundColor="White"/>
+            <Button Text="Update to Today's List" Clicked="UpdateList" Margin="5"/>
+            <Button Text="Delete from Today's List" Clicked="DeleteFromList" Margin="5" TextColor="Red"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

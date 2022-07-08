@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IT6035_Project.Supervisor.AddMerchandiser"
+             Title="Add Merchandiser"
+             BackgroundColor="Violet">
+    <ContentPage.Content>
+        <StackLayout Margin="30">
+            <Entry Keyboard="Text" Placeholder="First Name" x:Name="FirstName"/>
+            <Entry Keyboard="Text" Placeholder="Last Name" x:Name="LastName"/>
+            <Entry Keyboard="Text" Placeholder="Contact" x:Name="MerchandiserContact"/>
+            <Button Text="Add merchandiser to database" Margin="10" BorderColor="Black" BorderWidth="3" Clicked="AddMerchandiserF"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

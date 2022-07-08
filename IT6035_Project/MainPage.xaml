@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IT6035_Project.MainPage"
+             Title="Home"
+             BackgroundColor="Violet">
+    <Grid Margin="10, 30, 0, 0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Label Text="Please click on the button that relates to your role." TextColor="Black" FontSize="30" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" Padding="50,0"/>
+        <Button Text="Merchandiser" Clicked="Merchandiser" HorizontalOptions="CenterAndExpand" Padding="15, 0, 15, 0" FontSize="20" FontAttributes="Bold" TextColor="SaddleBrown" Grid.Row="1" Grid.Column="0"/>
+        <Button Text="Supervisor" Clicked="Supervisor" HorizontalOptions="CenterAndExpand" Padding="20,0,20,0" FontSize="20" FontAttributes="Bold" TextColor="Tomato" Grid.Row="1" Grid.Column="1"/>
+    </Grid>
+</ContentPage>
